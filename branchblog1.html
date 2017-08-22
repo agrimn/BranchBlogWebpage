@@ -4,28 +4,51 @@
 	<!-- Meta Tags -->
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+	<!-- Start The SEO Framework by Sybre Waaijer -->
+	<meta name="robots" content="noodp,noydir" />
+	<meta name="description" content="This year, Apple announced that starting with iOS 11, all instances of Safari will no longer share the same cookie space. This means that cookies set in&#8230;" />
+	<meta property="og:image" content="https://blog.branch.io/wp-content/uploads/2017/08/image2-4.png" />
+	<meta property="og:image:width" content="1806" />
+	<meta property="og:image:height" content="580" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="iOS 11 Safari View Controller cookie passthrough and the future of mobile web | Branch Blog" />
+	<meta property="og:description" content="This year, Apple announced that starting with iOS 11, all instances of Safari will no longer share the same cookie space. This means that cookies set in the main Safari browser app are no longer&#8230;" />
+	<meta property="og:url" content="https://blog.branch.io/ios-11-safari-view-controller-cookie-passthrough-and-the-future-of-mobile-web/" />
+	<meta property="og:site_name" content="Branch Blog" />
+	<meta property="article:published_time" content="2017-08-18" />
+	<meta property="article:modified_time" content="2017-08-18" />
+	<meta property="og:updated_time" content="2017-08-18" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@branchmetrics" />
+	<meta name="twitter:title" content="iOS 11 Safari View Controller cookie passthrough and the future of mobile web | Branch Blog" />
+	<meta name="twitter:description" content="This year, Apple announced that starting with iOS 11, all instances of Safari will no longer share the same cookie space. This means that cookies set in the main Safari browser app are no longer&#8230;" />
+	<meta name="twitter:image" content="https://blog.branch.io/wp-content/uploads/2017/08/image2-4.png" />
+	<meta name="twitter:image:width" content="1806" />
+	<meta name="twitter:image:height" content="580" />
 
 <!--Shortcut icon-->
 	<link rel="shortcut icon" href="" />
-  <link rel="apple-touch-icon" sizes="57x57" href="https://1yjmqg26uh9k15zq0o1pderc-wpengine.netdna-ssl.com/wp-content/themes/salient-child/favicon/apple-touch-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="https://1yjmqg26uh9k15zq0o1pderc-wpengine.netdna-ssl.com/wp-content/themes/salient-child/favicon/apple-touch-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="https://1yjmqg26uh9k15zq0o1pderc-wpengine.netdna-ssl.com/wp-content/themes/salient-child/favicon/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="https://1yjmqg26uh9k15zq0o1pderc-wpengine.netdna-ssl.com/wp-content/themes/salient-child/favicon/apple-touch-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="https://1yjmqg26uh9k15zq0o1pderc-wpengine.netdna-ssl.com/wp-content/themes/salient-child/favicon/apple-touch-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="https://1yjmqg26uh9k15zq0o1pderc-wpengine.netdna-ssl.com/wp-content/themes/salient-child/favicon/apple-touch-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="https://1yjmqg26uh9k15zq0o1pderc-wpengine.netdna-ssl.com/wp-content/themes/salient-child/favicon/apple-touch-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="https://1yjmqg26uh9k15zq0o1pderc-wpengine.netdna-ssl.com/wp-content/themes/salient-child/favicon/apple-touch-icon-152x152.png">
-  <link rel="icon" type="image/png" href="https://1yjmqg26uh9k15zq0o1pderc-wpengine.netdna-ssl.com/wp-content/themes/salient-child/favicon/favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/png" href="https://1yjmqg26uh9k15zq0o1pderc-wpengine.netdna-ssl.com/wp-content/themes/salient-child/favicon/favicon-16x16.png" sizes="16x16">
-  <link rel="icon" type="image/png" href="https://1yjmqg26uh9k15zq0o1pderc-wpengine.netdna-ssl.com/wp-content/themes/salient-child/favicon/favicon-32x32.png" sizes="32x32">
- 	<style>
- 	div.navbar-brand { background: black; height: 76px; padding-top: 5px}
- 	div.logo {clear: left; float: left; position: relative; left: 50%;}
- 	div.logo img {height: 70px; display: block; float: left; position: relative; right: 50%;}
- 	body {width: 100%; margin: 0; padding: 0; overflow: auto;}
- 	.footer { background: black; margin: auto; text-align: center;}
- 	.footer a {color:white; font-family:monospace; text-decoration:none;}
- 	div#main_container {margin-left: 10px; margin-right: 10px}
+	<link rel="apple-touch-icon" sizes="57x57" href="https://1yjmqg26uh9k15zq0o1pderc-wpengine.netdna-ssl.com/wp-content/themes/salient-child/favicon/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="https://1yjmqg26uh9k15zq0o1pderc-wpengine.netdna-ssl.com/wp-content/themes/salient-child/favicon/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="https://1yjmqg26uh9k15zq0o1pderc-wpengine.netdna-ssl.com/wp-content/themes/salient-child/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="https://1yjmqg26uh9k15zq0o1pderc-wpengine.netdna-ssl.com/wp-content/themes/salient-child/favicon/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="https://1yjmqg26uh9k15zq0o1pderc-wpengine.netdna-ssl.com/wp-content/themes/salient-child/favicon/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="https://1yjmqg26uh9k15zq0o1pderc-wpengine.netdna-ssl.com/wp-content/themes/salient-child/favicon/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="https://1yjmqg26uh9k15zq0o1pderc-wpengine.netdna-ssl.com/wp-content/themes/salient-child/favicon/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="https://1yjmqg26uh9k15zq0o1pderc-wpengine.netdna-ssl.com/wp-content/themes/salient-child/favicon/apple-touch-icon-152x152.png">
+	<link rel="icon" type="image/png" href="https://1yjmqg26uh9k15zq0o1pderc-wpengine.netdna-ssl.com/wp-content/themes/salient-child/favicon/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="https://1yjmqg26uh9k15zq0o1pderc-wpengine.netdna-ssl.com/wp-content/themes/salient-child/favicon/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="https://1yjmqg26uh9k15zq0o1pderc-wpengine.netdna-ssl.com/wp-content/themes/salient-child/favicon/favicon-32x32.png" sizes="32x32">
+
+	<style>
+		div.navbar-brand { background: black; height: 76px; padding-top: 5px}
+		div.logo {clear: left; float: left; position: relative; left: 50%;}
+		div.logo img {height: 70px; display: block; float: left; position: relative; right: 50%;}
+		body {width: 100%; margin: 0; padding: 0; overflow: auto;}
+		.footer { background: black; margin: auto; text-align: center;}
+		.footer a {color:white; font-family:monospace; text-decoration:none;}
+		div#main_container {margin-left: 10px; margin-right: 10px}
 	</style>
 	<script type="text/javascript">
 (function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode banner closeBanner creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode".split(" "), 0);
